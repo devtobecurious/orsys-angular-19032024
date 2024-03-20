@@ -1,0 +1,32 @@
++ Positifs ?
+très clair
+> des notions qu'on ne voit pas forcément, même à l'école
+> (ex: bases js)
+
+très passionné
+
+rythme ok
+> journée passée vite
+> attendre quand on écrit / tape du code
+
+théorie bien passée, et rapidement / intéressant
+> repartir des bases théoriques
+> bonne idée pour bien comprendre le pourquoi
+
+les schémas
+
+taille du groupe
+
++ Appris ?
+les interfaces typescript
+les types : pas enum
+la partie théorique
+le workspace d'abord
+les commandes  npm/ng et le pourquoi des faires
+
+
++ Des idées / des envies ou améliorations ?
+pas de support : google docs
+
+cas d'utilisation entreprise à citer
+

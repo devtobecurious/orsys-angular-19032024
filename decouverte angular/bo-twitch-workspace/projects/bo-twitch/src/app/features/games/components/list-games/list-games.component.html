@@ -1,0 +1,25 @@
+<!-- <twt-filters-games title="Les filtres"></twt-filters-games> -->
+
+<twt-filters-games [title]="titreFiltre" (filter)="filterGames($event)"></twt-filters-games>
+
+<button (click)="addFakeGame()">Add new game</button>
+<button (click)="removeFakeGame()">Delete last game</button>
+
+<i *ngIf="games.length == 0">Aucune partie commencée</i>
+
+<table *ngIf="games.length > 0" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Date</th>
+            <th>Jeu-vidéo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of games;">
+            <td>{{ item.titre }}</td>
+            <td>{{ item.date }}</td>
+            <td>Horizon </td>
+        </tr>
+    </tbody>
+</table>
