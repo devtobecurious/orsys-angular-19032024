@@ -1,5 +1,12 @@
 <twt-main-menu></twt-main-menu>
-<h2>Bienvenido !</h2>
+<h2>{{ title() }}</h2>
+<h3>{{ titreMaj() }}</h3>
+
+<button (click)="changeTitle()"></button>
+
+@for (item of characters_(); track $index) {
+    <div>{{ item.name }}</div>
+}
 
 <div class="container">
     <router-outlet ></router-outlet>
