@@ -45,7 +45,9 @@ export class ListCharactersComponent implements OnInit, OnDestroy {
   }
 
   saveOne(item: Character): void {
-    // appel de notre service pour sauvegarder l'item
+    this.service.updateOne(item).subscribe(char => {
+      this.itemToEdit = char;
+    });
   }
 
   cancelEdition(item: Character): void {

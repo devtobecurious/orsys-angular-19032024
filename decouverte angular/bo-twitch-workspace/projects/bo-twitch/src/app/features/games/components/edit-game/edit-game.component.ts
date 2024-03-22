@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'twt-edit-game',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './edit-game.component.html',
   styleUrl: './edit-game.component.css'
 })

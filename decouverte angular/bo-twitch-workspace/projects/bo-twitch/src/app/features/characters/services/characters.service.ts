@@ -19,6 +19,10 @@ export class CharactersService {
 
   constructor(private httpClient: HttpClient) { }
 
+  updateOne(item: Character): Observable<Character> {
+    return this.httpClient.put<Character>('https://swapi.dev/api/people', item);
+  }
+
   getAll(): Observable<Characters> {
     // je retourne toujours un observable : je crée un service stateless, 
     // donc je ne subscribe pas dans le service

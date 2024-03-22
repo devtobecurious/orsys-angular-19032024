@@ -1,5 +1,16 @@
 <div>
     <div>
+        <ul>
+            <li>
+                <a  routerLink="/">Home</a>
+            </li>
+            <li>
+                <a  routerLink="/characters">Les persos</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <button type="button" (click)="goToCharacters()">On y va</button>
         <twt-weather-display></twt-weather-display>
     </div>
 </div>
