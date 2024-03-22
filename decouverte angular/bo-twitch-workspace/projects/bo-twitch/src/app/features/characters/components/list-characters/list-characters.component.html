@@ -1,0 +1,15 @@
+<h1>Liste des personnages de nos jeux</h1>
+<div>
+    @for (item of characters; track $index)  {
+        <div>
+            {{ item.name }}
+            <div>
+                <button type="button" (click)="editOne(item)">Editer</button>
+            </div>
+        </div>
+    }
+</div>
+
+@if(itemToEdit) {
+    <twt-edit-characters [item]="itemToEdit" (save)="saveOne($event)" (cancel)="cancelEdition($event)"></twt-edit-characters>
+}

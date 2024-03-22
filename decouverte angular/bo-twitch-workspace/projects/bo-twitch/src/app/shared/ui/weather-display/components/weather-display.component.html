@@ -1,0 +1,11 @@
+<div>
+    @if(weather$ | async; as weather)
+    {
+        <!-- <div *ngIf="weather$ | async as weather"> -->
+        <!-- Chaque | async fait un subscribe  donc appel l'api ici !!! -->
+        <div>
+            <h2>{{ weather.temperature }}</h2>
+            <p>{{ weather.content }}</p>
+        </div>
+    }
+</div>
